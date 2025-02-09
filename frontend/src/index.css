@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+  background-color: #121212; /* Dark background for a modern look */
+  color: #ffffff; /* Light text */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-color: #1a1a1a; /* Slightly lighter dark background */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #2a2a2a; /* Dark header */
+  border-bottom: 1px solid #444444;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #00ffcc; /* Neon teal for the header */
+}
+
+/* Dropdown in Header */
+.header select {
+  margin-left: 15px;
+  padding: 8px;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.header select:focus {
+  border-color: #00ffcc; /* Neon teal for focus */
+}
+
+/* Chat Output (Text Bubbles) */
+.chat-output {
+  flex: 1; /* Takes up remaining space */
+  padding: 20px;
+  overflow-y: auto; /* Scrollable chat area */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between messages */
+}
+
+.message {
+  max-width: 80%; /* Wider messages for better readability */
+  padding: 15px 20px; /* Increased padding for more space */
+  border-radius: 12px;
+  font-size: 1.1rem; /* Slightly larger font size */
+  line-height: 1.5; /* Better line spacing */
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #00ffcc; /* Neon teal for user messages */
+  color: #1a1a1a; /* Dark text for contrast */
+}
+
+.message.bot {
+  align-self: flex-start;
+  background-color: #333333; /* Darker background for bot messages */
+  color: #ffffff; /* Light text */
+}
+
+/* Input Area */
+.input-area {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background-color: #2a2a2a; /* Dark input area */
+  border-top: 1px solid #444444;
+}
+
+.input-area input[type="text"] {
+  flex: 1; /* Takes up remaining space */
+  padding: 15px; /* Increased padding for better touch targets */
+  border: 1px solid #444444;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 1.1rem; /* Slightly larger font size */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-area input[type="text"]:focus {
+  border-color: #00ffcc; /* Neon teal for focus */
+}
+
+.input-area button {
+  padding: 15px 20px; /* Increased padding for better touch targets */
+  border: none;
+  border-radius: 8px;
+  background-color: #00ffcc; /* Neon teal for the button */
+  color: #1a1a1a; /* Dark text for contrast */
+  font-size: 1.1rem; /* Slightly larger font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-area button:hover {
+  background-color: #00e6b8; /* Slightly darker teal on hover */
+}
+
+/* Responsive Design for Phones */
+@media (max-width: 600px) {
+  .header {
+    padding: 10px; /* Slightly reduced padding for phones */
+  }
+
+  .header h1 {
+    font-size: 1.2rem; /* Smaller header font size */
+  }
+
+  .header select {
+    font-size: 0.9rem; /* Smaller dropdown font size */
+    padding: 6px; /* Smaller padding for dropdown */
+  }
+
+  .chat-output {
+    padding: 15px; /* Slightly reduced padding for phones */
+  }
+
+  .message {
+    max-width: 90%; /* Wider messages for phones */
+    padding: 12px 16px; /* Adjusted padding for phones */
+    font-size: 1rem; /* Slightly smaller font size for phones */
+  }
+
+  .input-area {
+    padding: 10px; /* Slightly reduced padding for phones */
+  }
+
+  .input-area input[type="text"] {
+    padding: 12px; /* Adjusted padding for phones */
+    font-size: 1rem; /* Slightly smaller font size for phones */
+  }
+
+  .input-area button {
+    padding: 12px 16px; /* Adjusted padding for phones */
+    font-size: 1rem; /* Slightly smaller font size for phones */
+  }
+}
