@@ -117,5 +117,5 @@ ai-chatbot/
 Feel free to submit issues or pull requests to improve the chatbot!
 
 ## Author
-- **Bidhan Khadka** - [GitHub Profile](https://github.com/bidhankhadka21)
+- **Bidhan Khadka** - [GitHub Profile](https://github.com/bidhankhadka11)
 
