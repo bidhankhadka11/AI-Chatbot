@@ -38,7 +38,11 @@ function App() {
     <div className="header">
       <h1>Chat with AI</h1>
       {/* Bot selection */}
-      <select id="options" name="options" onChange={(e) => setModel(e.target.value)}>
+      <select id="options" name="options" 
+      onChange={(e) => {
+        setModel(e.target.value)
+        setConvo([])
+      }}>
         <option value="neko">Neko - The Cat</option>
         <option value="shadow">Shadow - The anime nerd</option>
         <option value="destroyer">Destroyer - The rude fella</option>
