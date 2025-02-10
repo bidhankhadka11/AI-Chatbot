@@ -26,7 +26,8 @@ This is an AI-powered chatbot built using React for the frontend and Express.js 
 ![ChatUI](./Screenshot1.png)
 
 ### Phone UI
-![ChatUIPhone](./Screenshot2.png)
+<!-- ![ChatUIPhone](./Screenshot2.png) -->
+<img src="./Screenshot2.png" alt="Chat UI" width="500">
 
 ## API Endpoint
 ### POST `/chat/:modelName`
